@@ -26,11 +26,18 @@
                     colors: {
                         "color-primary": '#ABEF5F',
                         "color-secondary": 'rgba(171, 239, 95, 0.5)',
+                        "color-bg": '#F4F4F4',
+                        "color-white": '#FFFFFF',
                         "color-1": '#212121',
                         "color-2": '#494949',
+                        "color-3": '#737373',
                     },
                     fontFamily: {
                         manrope: ["Manrope", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        vector: "url('assets/Vector.png')",
+                        rectangle: "url('assets/Rectangle.png')",
                     },
                 }
             }
@@ -40,7 +47,7 @@
 
 <body class="font-manrope">
     <!-- Header Section -->
-    <header class="px-3 md:container md:mx-auto">
+    <header class="px-4 md:container md:mx-auto">
         <!-- Navbar -->
         <nav class="mt-4 md:mt-8">
             <div class="navbar bg-base-100">
@@ -101,7 +108,7 @@
         </nav>
 
         <!-- Banner Section -->
-        <div class="mt-8">
+        <div class="mt-8 pb-20">
             <div class="flex justify-center">
                 <img class="w-10/12 lg:w-7/12" src="./assets/banner.png" alt="">
             </div>
@@ -118,7 +125,7 @@
                 <div
                     class="flex items-center justify-center sm:w-[210px] mx-auto bg-color-secondary rounded-[32px] px-5 py-3 ">
                     <div class="text-lg font-extrabold ">
-                        <button>Book Consult</button>
+                        <button>View Details</button>
                     </div>
                     <div class=" text-white ml-2 bg-color-primary rounded-full px-2 py-1">
                         <i class="fa-solid fa-arrow-up rotate-45"></i>
@@ -130,6 +137,64 @@
 
     <!-- Main Section -->
     <main>
+        <!-- Design Section -->
+
+        <section class="bg-color-bg mb-96">
+            <div class="pt-10 px-4  md:container md:mx-auto">
+                <div class="relative -left-20 top-9 hidden lg:inline">
+                    <img src="assets/Vector.png" alt="">
+                </div>
+                <div class="lg:flex gap-9 items-center">
+                    <!-- Text Content -->
+                    <div class="space-y-6">
+                        <div class="text-center lg:text-left">
+                            <button class="text-color-2 font-bold bg-color-white px-4 py-2 rounded-full mt-6"><i
+                                    class="fa-solid fa-arrow-up rotate-90"></i><span class="ml-2">About
+                                    Us</span></button>
+                        </div>
+                        <h1 class="text-2xl lg:text-[40px] font-extrabold text-color-1 text-center lg:text-left">We
+                            design
+                            thoughtful,
+                            <br> liveable spaces
+                        </h1>
+                        <p class="text-color-2 font-medium w-3/4 mx-auto text-center lg:mx-0 lg:text-left">The barn
+                            house
+                            captivates with
+                            its
+                            blend of rustic
+                            charm and
+                            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        <div class=" flex items-center bg-color-white rounded-xl pl-6 lg:pr-24 pr-6 py-6">
+                            <div>
+                                <img src="assets/commercial.png" alt="">
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-extrabold text-color-2 ">Commercial</h3>
+                                <p class="text-color-3 font-medium mt-3">The barn house captivates with its blend of
+                                    rustic
+                                    charm and modern.</p>
+                            </div>
+                        </div>
+                        <div class=" flex items-center bg-color-white rounded-xl pl-6 lg:pr-24 pr-6 py-6">
+                            <div>
+                                <img src="assets/residential.png" alt="">
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-extrabold text-color-2 ">Residential</h3>
+                                <p class="text-color-3 font-medium mt-3">The barn house captivates with its blend of
+                                    rustic
+                                    charm and modern.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Image Content -->
+                    <div class="lg:h-[530px] lg:w-[573px] mt-6 ">
+                        <img class="w-full h-full" src="assets/Rectangle.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
     </main>
 
